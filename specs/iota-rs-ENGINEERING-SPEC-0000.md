@@ -82,7 +82,7 @@ A generic send function for easily sending a value transaction message.
 | **path** | ✔ | [BIP32Path] | The wallet chain BIP32 path we want to search for. |
 | **address** | ✔ | [Address] | The address to send to. |
 | **value** | ✔ | std::num::NonZeroU64 | The amount of IOTA to send. It is type of NoneZero types, so it cannot be zero. |
-| **output** | ✘ | Output | Users can manually pick their own output instead of having node decide on which output should be used. |
+| **output** | ✘ | [Output] | Users can manually pick their own output instead of having node decide on which output should be used. |
 | **indexation** | ✘ | Indexation | An optional indexation payload with indexation key and data. Both fields can be optional too. |
 
 ### Return
