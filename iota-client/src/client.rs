@@ -18,18 +18,10 @@ use bee_transaction::Vertex;
 
 macro_rules! response {
     ($self:ident, $body:ident) => {
-        ureq::post(&$self.get_node()?)
-            .set("Content-Type", "application/json")
-            .set("X-IOTA-API-Version", "1")
-            .send_json($body)
-            .into_json_deserialize()?
+        unimplemented!()
     };
     ($self:ident, $body:ident, $node:ident) => {
-        ureq::post($node)
-            .set("Content-Type", "application/json")
-            .set("X-IOTA-API-Version", "1")
-            .send_json($body)
-            .into_json_deserialize()?
+        unimplemented!()
     };
 }
 

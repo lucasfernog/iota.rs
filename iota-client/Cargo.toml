@@ -21,7 +21,7 @@ bee-crypto = { git = "https://github.com/iotaledger/bee.git", branch = "dev" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 chrono = "0.4.12"
-ureq = { version = "1.5.1", features = ["json"] }
+reqwest = { version = "0.10.8", features = ["json"] }
 
 [dev-dependencies]
 anyhow = "1.0.31"
